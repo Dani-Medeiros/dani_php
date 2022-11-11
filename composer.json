@@ -1,0 +1,28 @@
+{
+    "name": "dani_medeiros/dani_php",
+    "description": "Projeto CRUD com MVC (PHP e JavaScript)",
+    "minimum-stability": "stable",
+    "license": "Dani-Medeiros",
+    "authors": [
+        {
+            "name": "Daniele Medeiros",
+            "email": "danielemedeiros9@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "coffeecode/router": "^2.0"
+
+    }
+}
