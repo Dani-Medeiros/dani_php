@@ -6,8 +6,13 @@
 
         public function index($dados)
         {
-            echo "<h1>Professor index</h1>";
-            var_dump($dados);
+            $url = URL_BASE;
+            require __DIR__ . "/../../views/professor/index.php";
+        }
+
+        public function cadastro()
+        {
+            
         }
     }
 ?>

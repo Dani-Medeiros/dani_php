@@ -5,24 +5,30 @@
     {
         public function home($data)
         {
-            echo "<h1>Web Home</h1>";
-            var_dump($data);
+            /* echo "<h1>Web Home</h1>";
+            var_dump($data); */
+            $url = URL_BASE;
+            require __DIR__ . "/../../views/home/index.php";
         }
 
         public function professor($data)
         {
-            echo "<h1>Web Professor</h1>";
-            var_dump($data);
+            /* echo "<h1>Web Professor</h1>";
+            var_dump($data); */
 
             $url = URL_BASE;
-            require __DIR__ . "../../views/professor/cadastro.php";
+            require __DIR__ . "/../../views/professor/index.php";
 
         }
 
         public function error($data)
         {
-            echo "<h1>Web Erro {$data["errcode"]}</h1>";
-            var_dump($data);
+            if(!URL_BASE){
+
+                echo "<h1>Web Erro {$data["errcode"]}</h1>";
+                die();
+                
+            }
         }
     }
 ?>
