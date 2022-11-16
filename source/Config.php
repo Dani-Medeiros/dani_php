@@ -1,6 +1,7 @@
 <?php
 
-    define("URL_BASE", "http://localhost/dani_php");
+    //define("URL_BASE", "http://localhost/dani_php");
+    define("ROOT", "http://localhost/dani_php");
 
     const DATA_LAYER_CONFIG = [
         "driver" => "mysql",
@@ -17,4 +18,12 @@
         ]
     ];
 
+    function url(string $uri = null): string
+    {
+        if($uri) {
+            return ROOT . "/{$uri}";
+        }
+
+        return ROOT;
+    }
 ?>

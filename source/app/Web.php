@@ -7,7 +7,7 @@
         {
             /* echo "<h1>Web Home</h1>";
             var_dump($data); */
-            $url = URL_BASE;
+            $url = ROOT;
             require __DIR__ . "/../../views/home/index.php";
         }
 
@@ -16,14 +16,14 @@
             /* echo "<h1>Web Professor</h1>";
             var_dump($data); */
 
-            $url = URL_BASE;
+            $url = ROOT;
             require __DIR__ . "/../../views/professor/index.php";
 
         }
 
         public function error($data)
         {
-            if(!URL_BASE){
+            if(!ROOT){
 
                 echo "<h1>Web Erro {$data["errcode"]}</h1>";
                 die();

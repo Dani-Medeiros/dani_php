@@ -4,7 +4,8 @@
 
     use CoffeeCode\Router\Router;
 
-    $router = new Router(projectUrl: URL_BASE);
+    //$router = new Router(projectUrl: URL_BASE);
+    $router = new \CoffeeCode\Router\Router (projectUrl: ROOT);
 
     /**
      * Controllers
@@ -19,7 +20,7 @@
 
     $router->group(null);
     $router->get("/", "Web:home");
-    $router->get("/{filter}", "Web:home");
+    $router->get("/professor", "Web:home");
 
     /**
      * WEB

@@ -6,7 +6,7 @@
 
         public function index($dados)
         {
-            $url = URL_BASE;
+            $url = ROOT;
             require __DIR__ . "/../../views/professor/index.php";
         }
 
